@@ -1,0 +1,19 @@
+[package]
+name = "bevy_tokio_tungstenite"
+version = "0.5.0"
+authors = ["peter.holko@gmail.com"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = { version = "0.5.0"}
+crossbeam-channel = "0.5.1"
+tokio-tungstenite = "*"
+futures-util = { version = "0.3", default-features = false, features = ["async-await", "sink", "std"] }
+pin-project = "1.0"
+futures-channel = "0.3"
+tokio = { version = "1.0.0", default-features = false, features = ["io-std", "macros", "net", "rt-multi-thread", "time", "sync"] }
+url = "2.0.0"
+env_logger = "0.7"
+async-compat = "0.2.1"
